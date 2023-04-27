@@ -127,3 +127,9 @@ function play(){
     }
     requestAnimationFrame(create_pipe);
 }
+document.addEventListener("keydown", function(event) {
+  if (event.keyCode === 38) { // 38 is the keycode for the arrow up key
+    event.preventDefault();
+    // your code for handling the arrow up key goes here
+  }
+});
